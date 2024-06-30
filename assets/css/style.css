@@ -227,6 +227,13 @@ h6 {
   border-radius: 15px;
 }
 
+.custom-view{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: auto;
+}
+
 #p{
   text-decoration: none;
   color: gray;
@@ -280,10 +287,10 @@ h6 {
   width: 140px;
 }
 
-.tead-pagraph{
+.team-pagraph{
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   text-align: justify;
 }
 
@@ -319,6 +326,20 @@ button{
     color: white;
     font-weight: bold;
     font-size: 25px;
+  }
+
+  .team-pagraph{
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 20px;
+    
+  }
+  .custom-view{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
   }
 }
 /*--------------------------------------------------------------
