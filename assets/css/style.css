@@ -309,7 +309,8 @@ button{
 
 @media (max-width: 768px){
   .card{
-    top: 0;
+    top: 20em;
+    left: 0.5em;
     background-color: black;
     width: 100%
   }
@@ -318,18 +319,6 @@ button{
     color: white;
     font-weight: bold;
     font-size: 25px;
-  }
-
-  #main-card{
-    width: 100%;
-  }
-
-  .hero-section{
-    width: 100%;
-  }
-
-  .container{
-    width: 100%;
   }
 }
 /*--------------------------------------------------------------
