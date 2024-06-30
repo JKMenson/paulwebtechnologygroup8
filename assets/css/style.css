@@ -335,12 +335,7 @@ button{
     font-size: 20px;
     
   }
-  .custom-view{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin-right: 30px;
-  }
+ 
 }
 /*--------------------------------------------------------------
 # Footer
