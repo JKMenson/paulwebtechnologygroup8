@@ -1,0 +1,338 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: black;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #090909;
+}
+
+a:hover {
+  /*color: #80c792;*/
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: black;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+}
+
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo a {
+  color: #090909;
+}
+
+#header .logo img {
+  max-height: 65px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  color: white;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: yellowgreen;
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 40%;
+  left: 0;
+  bottom: 0;
+  background: rgba(9, 9, 9, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: black;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: yellowgreen;
+}
+
+
+/*hero section */
+.hero-section{
+  background-image: url(/images/hero-section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.card{
+  top: 20em;
+  left: 5em;
+  background-color: black;
+}
+
+.card .card-body h4{
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card .card-body p{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card .card-body .post-text{
+  color: gray;
+  font-weight: bold;
+}
+
+.card .card-body .post-img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+
+.custom-advertisement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  margin-top: 80px;
+  text-align: center;
+  padding-top: 10px;
+  height: auto;
+  border-radius: 15px;
+}
+
+#p{
+  text-decoration: none;
+  color: gray;
+}
+
+#advert{
+  font-size: 30px;
+  color: gray;
+
+}
+
+#pixels{
+  color: gray;
+}
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+  padding: 30px 20px;
+  border: solid rgb(214, 210, 210) 1px;
+  border-radius: 10px;
+}
+
+.team .member img {
+  max-width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.post{
+  text-align: justify;
+}
+.team-img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+.team-text{
+  color: gray;
+}
+
+.team-heading{
+  color: rgb(13, 77, 150);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #090909;
+  width: 140px;
+}
+
+.tead-pagraph{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: justify;
+}
+
+button{
+  background-color: rgb(37, 36, 36);
+  color: white;
+  width: 150px;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.befor-footer-heading{
+  color: white;
+}
+.subscript-card{
+  background-color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  
+}
+
+
+@media (max-width: 768px){
+  .card{
+    top: 0;
+    background-color: black;
+    width: 100%
+  }
+
+  .card .card-body p{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  #main-card{
+    width: 100%;
+  }
+
+  .hero-section{
+    width: 100%;
+  }
+
+  .container{
+    width: 100%;
+  }
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
